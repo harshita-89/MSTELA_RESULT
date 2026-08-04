@@ -1,0 +1,124 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.generated/
+*.dill
+
+# Build artifacts
+build/
+**/build/
+
+# Native / CMake
+**/.cxx/
+**/.cmake/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/build.ninja
+**/rules.ninja
+**/configure_fingerprint.bin
+**/metadata_generation_command.txt
+**/prefab_config.json
+**/symbol_folder_index.txt
+**/additional_project_files.txt
+**/android_gradle_build.json
+**/android_gradle_build_mini.json
+**/build_file_index.txt
+**/hash_key.txt
+**/TargetDirectories.txt
+**/cmake.check_cache
+**/*.o
+**/*.bin
+
+# Android
+**/android/.gradle/
+**/android/app/build/
+**/android/build/
+**/android/local.properties
+
+# Android signing keys
+*.jks
+*.keystore
+key.properties
+
+# Firebase Android config
+google-services.json
+
+# iOS
+**/ios/build/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/Generated.xcconfig
+
+# Firebase iOS config
+GoogleService-Info.plist
+
+# macOS
+**/macos/build/
+**/macos/Pods/
+**/macos/.symlinks/
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/flutter_assets/
+**/macos/Flutter/flutter_export_environment.sh
+**/macos/Flutter/Generated.xcconfig
+
+# Windows
+**/windows/build/
+**/windows/flutter/ephemeral/
+
+# Linux
+**/linux/build/
+**/linux/flutter/ephemeral/
+
+# Web build output
+frontend/build/
+**/web/build/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+
+# Environment / Secrets
+.env
+.env.*
+
+# Firebase logs / cache
+firebase-debug.log
+firestore-debug.log
+
+.firebase/
+.firestore/
+
+# Deployment
+.vercel/
+
+# Node
+node_modules/
+
+# Python
+.venv/
+venv/
+
+# Temporary / OS files
+*.zip
+*.tmp
+*.temp
+*.log
+
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Generated plugin registrants
+**/generated_plugin_registrant.*
+
+# Track important files
+!pubspec.lock
+!frontend/lib/firebase_options.dart

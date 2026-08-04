@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "quizzes": {
+      ".read": "auth != null",
+      ".write": "auth != null && auth.token.role == 'Faculty'",
+      "$subject": {
+        "$unit": {
+          "$quiz": {
+            ".validate": "newData.hasChildren(['title','questions','createdBy']) && newData.child('title').isString() && newData.child('title').val().length > 0 && newData.child('createdBy').val() == auth.uid"
+          }
+        }
+      }
+    },
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    ".read": false,
+    ".write": false
+  }
+}
